@@ -52,6 +52,8 @@ function decode(expr) {
           decodeKey += ".";
         } else if (b === "11") {
           decodeKey += "-";
+        } else {
+            decodeKey += "";
         }
       }
       result += MORSE_TABLE[decodeKey];
